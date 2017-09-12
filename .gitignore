@@ -1,0 +1,5 @@
+*.swp
+*~
+
+# Secret part of configuration should not be committed.
+secrets.yml
