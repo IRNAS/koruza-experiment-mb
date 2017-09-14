@@ -85,13 +85,13 @@ def push(data):
             },
             'weather_wind_speed': {
                 'name': 'Wind Speed',
-                'unit': 'mps',
+                'unit': 'km/h',
                 'value': data['wind']['speed'],
                 'group': 'weather_wind_speed',
             },
             'weather_wind_gust': {
                 'name': 'Wind Gust',
-                'unit': 'mps',
+                'unit': 'km/h',
                 'value': data['wind']['gust'],
                 'group': 'weather_wind_speed',
             },
