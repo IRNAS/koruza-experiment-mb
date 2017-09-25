@@ -58,8 +58,12 @@ def ping(uuid, link_id, source, destination):
                 hostname=source,
                 username='ubnt',
                 password='ubnt',
+                timeout=30,
             )
-            stdin, stdout, stderr = client.exec_command('sudo ping -i 0.1 -w 60 -n -q {}'.format(destination))
+            stdin, stdout, stderr = client.exec_command(
+                'sudo ping -i 0.1 -w 60 -n -q {}'.format(destination),
+                timeout=120,
+            )
             results = stdout.read()
 
             try:
